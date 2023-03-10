@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras Cinepolis</title>
+</head>
+<body background="Imagenes/palo2.jpg" style="background-repeat: no-repeat; background-attachment: fixed; background-size: 100%;">
+    <h1 align="center">Compra en linea</h1>
+    <form action="" method="post" enctype="text/plain"></form>
+            <table align="center">
+                <tbody>
+                    <td with="70%">
+                        <fieldset>
+                        <legend>Datos del usurio</legend>
+                        <label for="usuario">Nombre de usuario:</label></br>
+                        <input type="text" placeholder="usurio" name="usuario" id="usuario" required/></br></br>
+                        <legend for="correo"> Correo electronico</legend></br>
+                        <input type="email" name="correo" id="correo"/></br></br>
+                        <label for="pass">Contraseña:</label></br>
+                        <input type="password" name="pass" id="pass" placeholder="password" required/></br></br>
+                        <h3>Metodo de pago</h3>
+                        <input type="radio" name="tarjeta" id="tarjeta" checked />
+                        <label for="tarjeta">Tarjeta de credito</label></br>
+                        <input type="radio" name="tarjetad" id="tarjetad"/>
+                        <label for="tarjetad">Tarjeta de debito</label>
+                        </fieldset>
+
+                    </td>
+                    <td with="70%">
+                        <fieldset>
+                            <legend>Boleto</legend>
+                            <h3>Pelicula:</h3>
+                            <select size="4" multiple>
+                                <optgroup label="Comedia">
+                                    <option>Nada Que Ver</optio>
+                                </optgroup>
+                                <optgroup label="Romance">
+                                    <option>Quizás Para Siempre</option>
+                                </optgroup>
+                                <optgroup label="Animación">
+                                    <option>Demon Slayer: To the Swordsmith Village</option>
+                                    <option>Las Momias y El Anillo Perdido</option>
+                                    <option>El Gato Con Botas 2: El Último Deseo</option>
+                                    <option>Super Mario Bros</option>
+                                </optgroup>
+                                <optgroup label="Acción">
+                                    <option>Top Gun: Maverick</option>
+                                    <option>Avatar: El Camino del Agua</option>
+                                </optgroup>
+                                <optgroup label="Terror">
+                                    <option>Screm 6</option>
+                                    <option>Housera</option>
+                                </optgroup>
+                            </select> </br></br>
+                            <label for="fecha">Fecha de la función:</label>
+                            <input type="date" name="fecha" id="fecha"/></br>
+                            <h3>Indica la sala de cine</h3>
+                            <input type="radio" name="sala1" id="sala1" />
+                            <label for="sala1">Sala1:</label></br>
+                            <input type="radio" name="sala2" id="sala2" />
+                            <label for="sala2">Sala2:</label></br>
+                            <input type="radio" name="sala3" id="sala3" />
+                            <label for="sala3">Sala3:</label></br>
+                            <input type="radio" name="salavip" id="salavip" />
+                            <label for="salavip">Sala VIP:</label></br></br>
+                            <label for="cantidad">Cantidad de boletos a comprar</label></br>
+                            <input type="number" name="cantidad" id="cantidad"/></br></br>
+                            <label for="colores">Zona de asientos:</label></br>
+                            <input type="color" name="colores" id="colores"/></br></br>
+                            <img src="Imagenes/asientos.avif" size="75%" width="300" height="200"></br>
+                            <label for="asientos">Asientos: </label></br>
+                            <input type="text" placeholder="Asientos" name="asientos" id="asientos" required/></br></br>
+
+                        </fieldset>
+
+                    </td>
+                    <td with="70%">
+                        <fieldset>
+                            <legend>Dulceria:</legend>
+                            <select size="4" multiple>
+                                <optgroup label="Bebidas">
+                                    <option>Ice</option>
+                                    <option>Cocacola</option>
+                                    <option>Sprite</option>
+                                    <option>Manzanita</option>
+                                    <option>Caffe</option>
+                                    <option>Té</option>
+                                    <option>smothies</option>
+                                    <option>Frappés</option>
+                                </optgroup>
+                                <optgroup label="Palomitas">
+                                    <option>Cramelo</option>
+                                    <option>Mantequilla</option>
+                                    <option>Cheddar</option>
+                                    <option>Light</option>
+                                    <option>Plomitas con Doritos</option>
+                                    <option>Hershey's</option>
+                                    <option>Plomitas con Takis</option>
+                                    <option>Naturales</option>
+                                </optgroup>
+                                <optgroup label="Dulces">
+                                    <option>Bocaditos de sandia</option>
+                                    <option>Bolitas de sandia con chile</option>
+                                    <option>Minichewy SweeYTarts</option>
+                                    <option>Crunch</option>
+                                </optgroup>
+                                <optgroup label="Otros">
+                                    <option>Hot dog</option>
+                                    <option>Nachos</option>
+                                    <option>Pizza</option>
+                                    <option>Postre</option>
+                                </optgroup>
+                                <optgroup label="Combos">
+                                    <option>Clasico</option>
+                                    <option>Maxicombo</option>
+                                    <option>Micha</option>
+                                    <option>Junior</option>
+                                    <option>Cuates</option>
+                                    <option>Combo Nachos</option>
+                                </optgroup>
+                                <optgroup label="Menu VIP">
+                                    <option>Quesadilla de res</option>
+                                    <option>Combo sushi</option>
+                                    <option>Yakimeshi</option>
+                                </optgroup>
+                            </select>
+                            <h3>Tamaño de las palomitas</h3>
+                            <input type="checkbox" name="chico" id="chico" value="chico"/>
+                            <label for="chico">Chico</label></br>
+                            <input type="checkbox" name="mediano" id="mediano" value="mediano" checked/>
+                            <label for="mediano">Mediano</label></br>
+                            <input type="checkbox" name="grande" id="grande" cvalue="grande" />
+                            <label for="grande">Grande</label></br></br>
+                            <h3>Tamaño de la bebida</h3>
+                            <input type="checkbox" name="chicob" id="chicob" value="chicob"/>
+                            <label for="chicob">Chico</label></br>
+                            <input type="checkbox" name="medianob" id="medianob" value="medianob" checked/>
+                            <label for="medianob">Mediano</label></br>
+                            <input type="checkbox" name="grandeb" id="grandeb" cvalue="grandeb" />
+                            <label for="grandeb">Grande</label></br></br>
+                            <input name="boton" type="submit" value="Enviar">
+                            <input name="boton" type="reset" value="Borrar">
+                        </fieldset>
+                    </td>
+                </tbody>
+            </table>
+    </form>
+</body>
+</html>
