@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+</head>
+<body background="Imagenes/azul.avif" style="background-repeat: no-repeat; background-attachment: fixed; background-size: 100%;">
+    <h1 align="center">Tienda de ropa online</h1>
+    <form action="" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Información del Cliente</legend>
+            <table align="center">
+                <tbody>
+                <tr>
+                    <td width="40%">
+                    <label for="nombre">Nombre:</label></br>
+                    <input type="text" placeholder="Nombre" name="nombre" maxlength="12" id="nombre" required/>
+                    </td>
+                    <td width="40%">
+                        <label for="apellidoP">Apellido paterno:</label></br>
+                        <input type="text" placeholder="Apellido Paterno" name="apellidoP" maxlength="25" id="apellidoP" required/>
+                    </td>
+                    <td width="40%">
+                        <label for="apellidoM">Apellido Materno:</label></br>
+                        <input type="text" placeholder="Apellido Materno" name="apellidoM"  maxlength="25" id="apellidoM" required/>
+                    </td>
+                </tr> </br>
+                    <td width="40%">
+                        <label for="usuario">Nombre de usuario:</label></br>
+                        <input type="text" placeholder="usurio" name="usuario" id="usuario"/>
+                    </td>
+                    <td width="40%">
+                        <label for="contraseña">Contraseña</label></br>
+                        <input type="text" placeholder="password" name="contraseña" id="contraseña"/>
+                    </td>
+                </tbody>
+            </table> </br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de facturación</legend>
+            <table align="center">
+                <tbody>
+                    <tr >
+                        <td width="40%">
+                            <label for="calle">Calle</label> </br>
+                            <input type="text" placeholder="Calle" name="calle" id="calle"/>
+                        </td>
+                        <td  width="40%">
+                            <label for="num">Num:</label></br>
+                            <input type="text" placeholder="Numero exterior" name="num" id="num"/>
+                        </td>
+                        <td  width="40%">
+                            <label for="colonia">Colonia:</label></br>
+                            <input type="text" placeholder="Colonia" name="colonia" id="num"/>
+                        </td> 
+                    </tr></br>
+                    <tr>
+                        <td width="40%">
+                            <label for="correo">E-mail:</label></br>
+                            <input type="email" placeholder="E-mail" name="correo" id="correo" required/>
+                        </td>
+                        <td width="40%">
+                            <label for="codi">Codigo Postal:</label></br>
+                            <input type="text" placeholder="CP" name="codi" id="codi"/>
+                        </td>
+                        <td width="40%">
+                            <label for="rcf">RFC:</label></br>
+                            <input type="text" placeholder="RFC" name="rfc" id="rfc" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="40%">
+                            <label for="fecha">Fecha de venta:</label></br>
+                            <input type="date" name="fecha" id="fecha"/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de articulo adquerido</legend>
+            <table align="center">
+                <tbody>
+                    <td width="40%">
+                        <h3>Tipo</h3>
+                        <select size="5" multiple>
+                            <option>Vestido</option>
+                            <option>Falda</option>
+                            <option>Pantalon</option>
+                            <option>Playera</option>
+                            <option>Sudadera</option>
+                            <option>Camisa</option>
+                            <option>Tenis</option>
+                            <option>Gorras</option>
+                            <option>Bolsos</option>
+                        </select>
+                    </td>
+                    <td width="40%">
+                        <h3>Talla</h3>
+                        <input type="checkbox" name="chico" id="chico" value="chico"/>
+                        <label for="chico">Chico</label> </br>
+                        <input type="checkbox" name="mediano" id="mediano" value="mediano"/>
+                        <label for="mediano">Mediano</label> </br>
+                        <input type="checkbox" name="grande" id="grande" value="grande"/>
+                        <label for="grande">Grande</label> </br>
+                    </td>
+                    <td width="40%">
+                        <label for="colores">Selecciona un color:</label></br>
+                        <input type="color" name="colores" id="colores"/> </br></br>
+                        <input type="submit"/>
+                        <input type="reset"/>
+                    </td>
+                </tbody>
+            </table>
+        </fieldset>
+    </form> 
+    </br></br>
+    <footer align="center"><b>©Distribuidora de ropa en linea 2023 </b></footer>
+    
+</body>
+</html>
