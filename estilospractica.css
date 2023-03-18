@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(220, 230, 220);
+}
+#uno{
+    background-color: aquamarine;
+}
+#dos{
+    background-color: aquamarine;
+}
+.titulos{
+    color: blue;
+    font-style: italic ;
+}
+#titulo1{
+    color: blueviolet;
+    font-style: italic;
+    size: 500px;
+}
+#texto1{
+    color: rgb(41, 155, 117);
+    font-style: italic;
+    font-size: medium;
+}
+p:first-child{
+    color: blueviolet;
+    font-style: italic;
+}
+#texto2{
+    color: rgb(41, 155, 117);
+    font-style: italic;
+    font-size: medium;
+}
+#titulo2{
+    color: blueviolet;
+    font-style: italic;
+}
+
+
