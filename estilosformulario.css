@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(70, 64, 64);
+}
+legend{
+    color: rgb(255, 254, 253);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+label{
+    color: rgb(255, 254, 253);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+p{
+    color: rgb(255, 254, 253);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+}
+h1{
+    color: rgb(204, 203, 202);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+h3{
+    color: rgb(255, 254, 253) ;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+table{
+    width: 75%;
+}
+h2{
+    color: rgb(255, 254, 253) ;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h4{
+    color: rgb(255, 254, 253) ;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
