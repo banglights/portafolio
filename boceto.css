@@ -1,0 +1,55 @@
+.barra:hover{
+    background-color: rgb(154, 167, 167);
+    color: aliceblue;
+}
+#b{
+    width: 100%;
+    border-collapse: collapse;
+    height: 40px;
+}
+.barra{
+    text-align: center;
+    vertical-align:middle;
+}
+body{
+    background-color: rgb(15, 15, 15);
+    color:aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#img1{
+    width: 800px;
+    height: 460px;
+}
+p{
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(243, 237, 237);
+}
+
+#encabezado{
+    width: 90%;
+}
+#logo{
+    width: 90%;
+    height: 1px;
+}
+#somos{
+    width: 90%;
+    height: 50px;
+}
+.costados{
+    width: 380px;
+    height: 240px;
+}
+#estrenos{
+    text-align: left;
+    vertical-align:baseline;
+}
+#somos{
+    text-align: left;
+    vertical-align: baseline;
+}
+.redes{
+    width: 40px;
+    height: 40px;
+}
