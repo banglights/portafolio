@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #navegacion{
+            color: rgb(255, 255, 255);
+            padding: 5px 70px;
+            text-align: left;
+        }
+        #navegacion li:hover{
+            background-color: rgb(154, 167, 167);
+        }
+        #navegacion li{
+            display: inline-block;
+            background-color: black;
+            list-style: none;
+            padding: 15px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: large;
+        }
+        body{
+            background-color: black;
+        }
+        h1{
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: larger;
+            text-align: center;
+            font-weight: 200;
+        }
+        .preguntas{
+            display: block;
+            background-color: rgb(37, 37, 36);
+            width: 1100px;
+            margin: 15px auto;
+            text-align: left;
+        }
+        .contenedor-preguntas{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .contenedor-respuestas{
+            background: white;
+            padding: 20px;
+            border: 20px solid transparent;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: .3s ease all;
+            cursor: pointer;
+        }
+
+        .contenedor-respuestas{
+            box-shadow:inset;
+        }
+
+        .pregunta{
+            font: 20px bold;
+            font-size: 20px;
+            line-height: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .respuesta{
+            color:rgb(154, 167, 167);
+            line-height: 30px;
+            max-height: 30px;
+            opacity: 1;
+            transition: .3s ease all;
+        }
+
+        .contenedor-respuesta.activa.respuesta{
+            opacity: 1;
+            margin-top: 20px;
+        }
+        .contenedor-respuesta.activa img{
+            transform: rotate(45deg);
+        }
+        @media screen and (max-width:850px){
+            nav{
+                width: 100%;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: purple;
+        }
+        footer{
+            text-align: center;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body >
+    <nav id="navegacion">
+        <ul>
+            <li><a href="proyectofinal.html">Inicio</a></li>
+            <li><a href="peliculas.html">Peliculas</a></li>
+            <li><a href="series.html">Series</a></li>
+            <li>Productoras</li>
+            <li><a href="asia.html">Asia</a></li>
+            <li>Blog</li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="ayuda.html">Ayuda</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="titulo">Preguntas Frecuentes</h1>
+        <div class="preguntas">
+            <div class="contenedor-preguntas">
+                <div class="contenedor-respuestas">
+                    <p class="pregunta">- ¿Quienes somos? <img src="peliculas/suma.avif" alt="Respuesta"/></p>
+                    <p class="respuesta">Somos una comunidad encargada de brindar toda la infomacion tus series y peliculas favoritas. Nombre de la pagina... siempre te traira las mejores reseñas y recomendaciones de series y peliculas para todos las edades, generos y gustos.</p>
+                </div>
+                <div class="contenedor-respuestas">
+                    <p class="pregunta">- ¿Donde puedo ver las series y peliculas? <img src="peliculas/suma.avif" alt="Respuesta"/></p>
+                    <p class="respuesta">Debajo de las sinopsis de cada serie o pelicula encontraras la sección de "Ver" allí encontraras todos los sitios posibles para verla serie o pelicula que deseas.
+                        ---Nota todas las series o peliculas no son parte de esta comunidad--
+                    </p>
+                </div>
+                <div class="contenedor-respuestas">
+                    <p class="pregunta">- ¿Cuando suben nuevas reseñas? <img src="peliculas/suma.avif" alt="Respuesta"/></p>
+                    <p class="respuesta">Cada martes y sabados podras encontrar nuevas reseñas.</p>
+                </div>
+                <div class="contenedor-respuestas">
+                    <p class="pregunta">- ¿Quisiera que agregen una nueva serie o pelicula? <img src="peliculas/suma.avif" alt="Respuesta"/></p>
+                    <p class="respuesta">Si deseas que agregemos tu serie o pelicula fovorita puedes llenar nuestro formulario que se encuentra en la pestaña de contacto.
+                        O puedes solicitarla en nuestro blog o en cualquier red social. Aunque te recomendamos usar la primera opción para asegurar que leamos tu petición.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    </br></br>
+    <footer><a href="">Para mas preguntas o dudas ingresa nuestro blog</a></footer>
+</body>
+</html>
