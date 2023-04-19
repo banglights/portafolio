@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javaPractica1.js"></script>
+    <style>
+        div{
+            width: 100%;
+            height: 700px;
+            align-content: center;
+            margin: 12%;
+        }
+        input{
+            display: block;
+            background-color: rgb(91, 209, 209);
+            padding: 20px;
+            width: 75%;
+            height: 60px ;
+            -moz-border-radius: 15px ;
+            -webkit-borde-radius: 15px ;
+            border-radius: 15px ;
+            border: none;
+
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: larger;
+            color: beige;
+        }
+        h1{
+            text-align: center;
+            color: rgba(197, 202, 152, 0.767);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Operaciones Matematicas</h1>
+    <div>
+        <for method="post" enctype="text/plain">
+            <input type="button" name="sumar" value="Suma"  onclick="suma()"/>
+            </br>
+            <input type="button"  name="restar" value="Resta" onclick="resta()"/>
+            </br>
+            <input type="button"  name="multiplicar" value="Multiplicar" onclick="multiplicar()"/>
+            </br>
+            <input type="button"  name="dividir" value="Dividir" onclick="dividir()"/>
+            </br>
+            <input type="button"  name="saludar" value="¿Positivo o negativo?" onclick="signo()"/>
+        </for>
+    </div>
+</body>
+</html>
