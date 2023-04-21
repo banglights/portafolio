@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="practica2java.js"></script>
+    <style>
+        div{
+            display: block;
+            background-color: rgb(221, 221, 216);
+            padding: 20px;
+        }
+        input{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        }
+        h1{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h2{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Operaciones Matematicas</h1>
+    <h1>181619</h1>
+    <div>
+        <for method="post" action="" enctype="text/plain">
+            <label for="numero">Escribe un numero: </label></br></br>
+            <input type="text" name="num2" id="numero1"/></br></br>
+            <label for="numero2">Escribe un numero: </label></br></br>
+            <input type="text" name="num1" id="numero2"/></br></br>
+            <input type="button" name="sumar" value="Suma"  onclick="suma()"/>
+            <input type="button"  name="restar" value="Resta" onclick="resta()"/>
+            <input type="button"  name="multiplicar" value="Multiplicar" onclick="multiplicar()"/>
+            <input type="button"  name="dividir" value="Dividir" onclick="dividir()"/>
+        </for>
+        <h2>El resultado es: </h2>
+        <p id="resultado" name="resultado"></p>
+    </div>
+
+</body>
+</html>
