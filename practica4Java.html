@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script4.js"></script>
+    <style>
+        #boton{
+            display: block;
+            background-color: rgb(24, 184, 196);
+            width: 90%;
+            height: 25px;
+        }
+        input{
+            display: block;
+            background-color: rgb(216, 243, 245);
+            width: 20%;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <for method="post" encype="text/plain" >
+        <label for="nombre">Nombre: </label></br>
+        <input type="text" name="nombre" id="nombre" ></br></br>
+        <label for="apeP">Apellido Paterno</label></br>
+        <input type="text" name="apeP" id="apeP"></br></br>
+        <label for="apeM">Apellido Materno</label></br>
+        <input type="text" name="apeM" id="apeM"></br></br>
+        <label for="año">Año de nacimiento: </label></br>
+        <input type="text" name="año" id="año"></br></br>
+        <label for="mes">Mes de nacimiento: </label></br>
+        <input type="text" name="mes" id="mes"></br></br>
+        <label for="dia">Dia de nacimiento: </label></br>
+        <input type="text" name="dia" id="dia"></br></br>
+        <label for="resultado">Resultado </label></br>
+        <input type="text" name="resultado" id="resultado"></br></br>
+        <input type="button" name="boton" id="boton" onclick="generar()" value="Generar RFC">
+    </for>
+</body>
+</html>
