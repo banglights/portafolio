@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ubicacion</title>
+    <script>
+        var posElt;
+        var postLinkElt;
+
+        window.addEventListener("load", function(){
+            posElt=document.getElementById("Pos");
+            postLinkElt= document.querySelector("#PosLink>a");
+
+            navigator.geolocation.getCurrentPosition(geopostOK, geopostNo);
+        });
+
+        function geopostOK(pos){
+            var lat=pos.coords.latitude;
+            var long=pos.coords.longitude;
+
+            posElt.textContent='$(lat), $(long)';
+            postLinkElt.href= 'https://google.com/?q=$(lat),$(long)';
+            postLinkElt.textContent="Mostrar tu posición en un mapa";
+
+        }
+
+        function geopostNo(err){
+            console.warn(err.message);
+            let msg;
+            switch(err.code){
+                case err.PERMISSION_DENIED:
+                    alert("Debe usted permitir el acceso a su posición para que la aplicación pueda funcionar");
+                    break;
+                case err.POSITION_UNAVAILABLE:
+                    alert("La información sobre su posición actual no está disponible");
+                    break;
+                case err.TIMEOUT:
+                    alert("No he podido obtener su posición en un tiempo razonable");
+                    break;
+                default:
+                    alert("Se ha producido un error desconocido al intentar obtener la posición actual");
+                    break;
+            }
+        }
+
+    </script>
+    <style>
+        body{
+            background-color: rgb(153, 149, 149);
+            color: aliceblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        div{
+            width: 90%;
+            height:700px;
+            margin: 2cm auto;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Busca tu localizacion para realizar la entrega</h1>
+        <p>Tu posición es: <span id="Pos">Desconocida</span></p>
+        <p id="PosLink"><a target="_blank"></a></p>
+    </div>
+</body>
+</html>
