@@ -17,11 +17,11 @@
         });
 
         function geopostOK(pos){
-            var lat=pos.coords.latitude;
-            var long=pos.coords.longitude;
+            var lat=Pos.coords.latitude;
+            var long=Pos.coords.longitude;
 
-            posElt.textContent="$(lat), $(long)";
-            postLinkElt.href= "https://google.com/?q=$(lat),$(long)";
+            posElt.textContent='$(lat), $(long)';
+            postLinkElt.href= "https://google.com/?q=$(lat)$(long)";
             postLinkElt.textContent="Mostrar tu posición en un mapa";
 
         }
@@ -66,6 +66,13 @@
         <h1>Busca tu localizacion para realizar la entrega</h1>
         <p>Tu posición es: <span id="Pos">Desconocida</span></p>
         <p id="PosLink"><a target="_blank"></a></p>
+        
+        <p>La API de geolocalización HTML se utiliza para obtener la posición geográfica de un usuario.
+            Dado que esto puede comprometer la privacidad, el puesto no está disponible a menos que el usuario lo apruebe. Es 
+            inportante por que nos brinda la oportunidad de conocer la ubicacion del usuario aunque para esto se debe pedir el concentimineto
+            del cliente. Este tipo de apis se pude utilizar para citios de negocios ya eu en ocacione los usuarios desean 
+             saber como llegar al negocio y esta es una menera de conocer los locales cercanos.</p>
+        <p>Este ejemplo es para que el usuario encuentre su ubicación y ademas pueda visualizarla en un mapa en una pagina externa</p>
     </div>
 </body>
 </html>
