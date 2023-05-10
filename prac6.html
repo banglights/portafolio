@@ -17,11 +17,11 @@
         });
 
         function geopostOK(pos){
-            var lat=Pos.coords.latitude;
-            var long=Pos.coords.longitude;
+            var lat=pos.coords.latitude;
+            var long=pos.coords.longitude;
 
-            posElt.textContent='$(lat), $(long)';
-            postLinkElt.href= "https://google.com/?q=$(lat)$(long)";
+            posElt.textContent=$(lat), $(long);
+            postLinkElt.href= "https://google.com/?q=$(lat),$(long)";
             postLinkElt.textContent="Mostrar tu posición en un mapa";
 
         }
