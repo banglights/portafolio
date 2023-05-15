@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">	
+	<script type="text/javascript" src="jspdf.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.addimage.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.standard_fonts_metrics.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.from_html.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.split_text_to_size.js"></script>
+    <style>
+        .barra:hover{
+            background-color: rgb(154, 167, 167);
+            color: aliceblue;
+        }
+        #b{
+            width: 100%;
+            border-collapse: collapse;
+            height: 40px;
+        }
+        .barra{
+            text-align: center;
+            vertical-align:middle;
+            width: 12.5%;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        body{
+            background-color: rgb(15, 15, 15);
+            color:aliceblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div{
+            width: 80%;
+            margin: auto;
+        }
+        #tipo{
+            width: 10%;
+        }
+
+        #pagina{
+            width: 10%;
+        }
+        input{
+            background-color:aliceblue;
+            width: 45%;
+            margin: auto;
+
+        }
+
+        iframe{
+            position: absolute;
+            right: 10%;
+            float: right;
+        }
+    </style>
+</head>
+<script>
+    function generar(){
+        var doc= new jsPDF();
+        //DEFINI TAMAÑO DE LA LETRA
+        doc.setFontSize(25);
+        //color del texto
+        doc.setTextColor(9, 7, 121);
+        //define a que elemento se le agrara el estilo junto a las cooredenadas
+        doc.text(70, 20, "------- Pedido -------");
+
+        doc.setTextColor(0,0,0);
+        doc.setFontSize(20);
+        doc.text(20, 50, "Usuario: ");
+        doc.text(20, 70, "E-mail: ")
+        doc.text(20, 90, "Pagina: ");
+        doc.text(20, 110, "Tipo: ");
+        doc.text(20, 130, "Nombre de la pelicula o serie: ");
+        doc.text(20, 150, "Opinion: ");
+        doc.setTextColor(9, 7, 121);
+        doc.text(40, 170, "------------------------------------------------------------");
+        doc.text(20, 200, "Pedido enviado. \r pronto veras tu recomendacion en nuestro catalogo :)");
+        
+        var string = doc.output('datauristring');
+        $('iframe').attr('src', string);
+    }
+</script>
+<body>
+    <nav>
+        <table id="b" align="center">
+            <tr>
+                <td class="barra"><a href="proyectofinal.html">Inicio</a></td>
+                <td class="barra"><a href="peliculas.html">Peliculas</a></td>
+                <td class="barra"><a href="series.html">Series</a></td>
+                <td class="barra"><a href="">Productoras</a></td>
+                <td class="barra"><a href="asia.html">Asia</a></td>
+                <td class="barra"><a href="blog.html">Blog</a></td>
+                <td class="barra"><a href="contacto.html">Contacto</a></td>
+                <td class="barra"><a href="ayuda.html">Ayuda</a></td>
+            </tr>
+        </table>
+    </nav>
+    <div>
+    </br></br>
+        <form>
+            <input type="text" name="usuario" id="usuario" placeholder="Usuario"/><br/></br>
+            <input type="email" name="correo" id="correo" placeholder="Correo"/></br></br>
+            <p>Datos de la pagina</p>
+            <input type="radio" name="pagina" id="pagina" />
+            <label for="pagina">SuperMangito</label></br>
+            <input type="radio" name="pagina" id="pagina"/>
+            <label for="pagina">Bangdramas</label></br>
+            <p>Tipo</p>
+            <input type="radio" name="tipo" id="tipo" />
+            <label for="tipo">Serie</label></br>
+            <input type="radio" name="tipo" id="tipo"/>
+            <label for="tipo">Pelicula</label></br></br>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre de serie o pelicula"/><br/></br>
+            <input type="text" name="opinion" id="opinion" placeholder="Calificacion para nuestra comunidad"/></br></br>
+            <input type="button" onclick="generar()" value="Enviar"/></br></br>
+        </form>
+        <iframe frameborder="0" width="45%" height="500"></iframe>
+    </div>
+</body>
+</html>
