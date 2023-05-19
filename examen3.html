@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">	
+    <script>
+        function formulario(){
+            var nac=document.getElementById("fecha");
+            var final=nac.charAt(3);
+            //document.getElementById("resultado").value=nac;
+           if(final==5){
+                document.getElementById("resultado").innerHTML="Felicidades obtubiste 2x1";
+            } else 
+                document.getElementById("resultado").innerHTML="No obtuviste descuento suerte para la proxima";
+        }
+    </script>
+    <style>
+        body{
+            background-color: lightcyan;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        input{         
+            background-color: rgb(213, 228, 188);
+           
+            padding: 15px;
+            width: 90%;
+        }
+        form{
+            width: 90%;
+            margin: auto;
+        }
+        h1{
+            color: rgb(52, 61, 38);
+            padding: 15px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Puedes obtener un oproducto gratis</h1>
+    <form>
+        <label for="nombre">Nombre: </label></br>
+        <input type="text" name="nombre" id="nombre"></br></br>
+        <label for="fecha">Fecha de nacimiento</label></br>
+        <input type="date" id="fecha" name="fecha"></br></br>
+        <input type="button" name="generar" id="generar" onclick="formulario()" value="Enviar formulario">
+    </form>
+    <p></p>
+    <p id="resultado"> </p>
+
+</body>
+</html>
