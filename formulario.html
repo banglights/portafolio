@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario</title>
+    <title>popCORNs-peticiones</title>
     <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">	
 	<script type="text/javascript" src="jspdf.js"></script>
@@ -27,7 +27,7 @@
         .barra{
             text-align: center;
             vertical-align:middle;
-            width: 12.5%;
+            width: 16.7%;
         }
 
         a{
@@ -77,15 +77,12 @@
 
         doc.setTextColor(0,0,0);
         doc.setFontSize(20);
-        doc.text(20, 50, "Usuario: ");
-        doc.text(20, 70, "E-mail: ")
-        doc.text(20, 90, "Pagina: ");
-        doc.text(20, 110, "Tipo: ");
-        doc.text(20, 130, "Nombre de la pelicula o serie: ");
-        doc.text(20, 150, "Opinion: ");
+        doc.text(20, 50, "Los pedidos son enviados a nuestro administradores,");
+        doc.text(20, 70, "por lo regular tardan de 4 a 5 dias en resivir y evaluar,");
+        doc.text(20, 80, "la petecion, para posteriormente publicarla,");
         doc.setTextColor(9, 7, 121);
-        doc.text(40, 170, "------------------------------------------------------------");
-        doc.text(20, 200, "Pedido enviado. \r pronto veras tu recomendacion en nuestro catalogo :)");
+        doc.text(40, 90, "------------------------------------------------------------");
+        doc.text(20, 110, "Pedido enviado. \r pronto veras tu recomendacion en nuestro catalogo :)");
         
         var string = doc.output('datauristring');
         $('iframe').attr('src', string);
@@ -98,10 +95,7 @@
                 <td class="barra"><a href="proyectofinal.html">Inicio</a></td>
                 <td class="barra"><a href="peliculas.html">Peliculas</a></td>
                 <td class="barra"><a href="series.html">Series</a></td>
-                <td class="barra"><a href="">Productoras</a></td>
                 <td class="barra"><a href="asia.html">Asia</a></td>
-                <td class="barra"><a href="blog.html">Blog</a></td>
-                <td class="barra"><a href="contacto.html">Contacto</a></td>
                 <td class="barra"><a href="ayuda.html">Ayuda</a></td>
             </tr>
         </table>
@@ -113,9 +107,9 @@
             <input type="email" name="correo" id="correo" placeholder="Correo"/></br></br>
             <p>Datos de la pagina</p>
             <input type="radio" name="pagina" id="pagina" />
-            <label for="pagina">SuperMangito</label></br>
+            <label for="pagina">popCORNs</label></br>
             <input type="radio" name="pagina" id="pagina"/>
-            <label for="pagina">Bangdramas</label></br>
+            <label for="pagina">GO!Dramas</label></br>
             <p>Tipo</p>
             <input type="radio" name="tipo" id="tipo" />
             <label for="tipo">Serie</label></br>
@@ -127,5 +121,34 @@
         </form>
         <iframe frameborder="0" width="45%" height="500"></iframe>
     </div>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="principal.html">
+                        <h2>popCORNs</h2>
+                    </a>
+                </figure>
+            </div>
+
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+            if (!myLandbot) {
+                var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+                s.addEventListener('load', function() {
+                var myLandbot = new Landbot.Livechat({
+                    configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1602635-8V9BUPJD95NP2HIB/index.json',
+                });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+        }
+    </script>
 </body>
 </html>
