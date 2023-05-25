@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>popCORNs</title>
+    <link rel="stylesheet" href="estilosreseñas.css">
+    <link rel="stylesheet" href="estilos.css">
+     <!--Iconos-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <script src="blogjava.js"></script>
+    <style>
+        .logo{
+            background-image: url(MiVillanoFavorito-3-enc.jpg);
+            width: 100%;
+            height: 600px;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            
+        </div>
+        <table id="b" align="center">
+            <tr>
+                <td class="barra"><a href="proyectofinal.html">Inicio</a></td>
+                <td class="barra"><a href="peliculas.html">Peliculas</a></td>
+                <td class="barra"><a href="series.html">Series</a></td>
+                <td class="barra"><a href="asia.html">Asia</a></td>
+                <td class="barra"><a href="ayuda.html">Ayuda</a></td>
+            </tr>
+        </table>
+    </nav>
+    
+    <hr width = "99%" size="0.8%" noshade color="white"/>
+    </br>
+   <section>
+    <div class="info">
+        <div class="caja">
+            <img class="peli" src="e7e4d-mi_villano_favorito_3.jpg">
+        </div>
+        <div class="caja">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kdYRLVG-Mi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>            
+       
+    </div> 
+    
+    <div class="cajas">
+        <h1>Mi villano favorito 3</h1></br>
+            <p>
+                <b>Sinopsis: </b>Gru trabaja ahora capturando villanos pero fracasa y es despedido. Poco después descubre que tiene un hermano, Dru, y juntos se enfrentan a un villano que pretende robar un diamante y destruir Hollywood. Sin embargo, Dru quiere convencer 
+                a Gru para que además retome su carrera como villano, ya que su padre lo fue también.
+            </p></br>
+            <p><b>Género:</b>Infantil, comedia</p></br>
+            <p><b>Duración:</b> 1h 36min</p></br>
+            <p>Pelicula: 3</p>
+    </div>
+
+    <div class="nose">
+        <h2 class="lugar">Donde encontrarlo</h2>
+        <img class=net src="unnamed.webp"/>
+       
+    </div>
+
+    </section>
+</br>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="proyectofinal.html">
+                        <h2>popCORNs</h2>
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Envianos un comentario</h2>
+                <section id="cajaformulario">
+                    <form name="formulario">
+                        <input type="text" name="clave" id="clave" placeholder="Usuario">
+                    </br><textarea name="text" id="texto" placeholder="Nuevo comentario"></textarea>
+                        <p><input type="button" name="guardar" id="guardar"
+                        value="Comentar"></p>
+                        <p><input type="button" name="eliminar" id="eliminar"
+                        value="Borrar comentario" onclick="elimina()"></p>
+                    </form>
+                </section>
+                <section id="cajadatos">
+                    .
+                    </br>
+                </section>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/Super-Mangito-107552885651114/" class="fa fa-facebook"></a>
+                    <a href="https://t.me/+Yrdh1Q7fvSAwZTUx" class="fa fa-telegram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>popCORNs</b></small>
+        </div>
+    </footer>
+
+
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+            if (!myLandbot) {
+                var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+                s.addEventListener('load', function() {
+                var myLandbot = new Landbot.Livechat({
+                    configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1602635-8V9BUPJD95NP2HIB/index.json',
+                });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+        }
+    </script>
+</body>
+</html>
