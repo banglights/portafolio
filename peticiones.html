@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar PDF</title>
+    <style>
+        .barra:hover{
+            background-color: rgb(154, 167, 167);
+            color: aliceblue;
+        }
+        #b{
+            width: 100%;
+            border-collapse: collapse;
+            height: 40px;
+        }
+        .barra{
+            text-align: center;
+            vertical-align:middle;
+            width: 12.5%;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        body{
+            background-color: rgb(15, 15, 15);
+            color:aliceblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div{
+            width: 80%;
+            margin: auto;
+        }
+        #tipo{
+            width: 10%;
+        }
+
+        #pagina{
+            width: 10%;
+        }
+        input{
+            background-color:aliceblue;
+            width: 45%;
+            margin: auto;
+
+        }
+
+        iframe{
+            position: absolute;
+            right: 10%;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <table id="b" align="center">
+            <tr>
+                <td class="barra"><a href="proyectofinal.html">Inicio</a></td>
+                <td class="barra"><a href="peliculas.html">Peliculas</a></td>
+                <td class="barra"><a href="series.html">Series</a></td>
+                <td class="barra"><a href="">Productoras</a></td>
+                <td class="barra"><a href="asia.html">Asia</a></td>
+                <td class="barra"><a href="blog.html">Blog</a></td>
+                <td class="barra"><a href="contacto.html">Contacto</a></td>
+                <td class="barra"><a href="ayuda.html">Ayuda</a></td>
+            </tr>
+        </table>
+    </nav>
+    <div>
+    </br></br>
+        <form>
+            <input type="text" name="usuario" id="usuario" placeholder="Usuario"/><br/></br>
+            <input type="email" name="correo" id="correo" placeholder="Correo"/></br></br>
+            <p>Datos de la pagina</p>
+            <input type="radio" name="pagina" id="pagina" />
+            <label for="pagina">SuperMangito</label></br>
+            <input type="radio" name="pagina" id="pagina"/>
+            <label for="pagina">Bangdramas</label></br>
+            <p>Tipo</p>
+            <input type="radio" name="tipo" id="tipo" />
+            <label for="tipo">Serie</label></br>
+            <input type="radio" name="tipo" id="tipo"/>
+            <label for="tipo">Pelicula</label></br></br>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre de serie o pelicula"/><br/></br>
+            <input type="text" name="opinion" id="opinion" placeholder="Calificacion para nuestra comunidad"/></br></br>
+        </form>
+
+    <a href="javascript:genPDF()">Enviar</a>
+    <script type="text/javascript" src="jspdf.min.js"></script>
+    <script type="text/javascript">
+        function genPDF(){
+            var doc=new jsPDF();
+
+            let usu=document.getElementById('usuario').value;
+            let corr=document.getElementById('correo').value;
+            let pag=document.getElementById('pagina').value;
+            let sop=document.getElementById('tipo').value;
+            let nom=document.getElementById('nombre').value;
+            let op=document.getElementById('opinion').value;
+            //DEFINI TAMAÑO DE LA LETRA
+            doc.setFontSize(25);
+            //color del texto
+            doc.setTextColor(9, 7, 121);
+            //define a que elemento se le agrara el estilo junto a las cooredenadas
+            doc.text(70, 20, "------- Pedido -------")
+
+            doc.setTextColor(0,0,0);
+            doc.setFontSize(20);
+            doc.text(20, 50, "Usuario: ", usu);
+            doc.text(20, 70, "E-mail: ", correo)
+            doc.text(20, 90, "Pagina: ", pag);
+            doc.text(20, 110, "Tipo: ", sop);
+            doc.text(20, 130, "Nombre de la pelicula o serie: ", nom);
+            doc.text(20, 150, "Opinion: ", op);
+            doc.setTextColor(9, 7, 121);
+            doc.text(40, 170, "------------------------------------------------------------");
+            doc.text(20, 200, "Pedido enviado. \r pronto veras tu recomendacion en nuestro catalogo :)");
+
+            doc.addPage();
+            doc.save('pedido.pdf');
+        }
+    </script>
+</body>
+</html>
