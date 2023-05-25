@@ -22,61 +22,47 @@ body{
 .barra{
     text-align: center;
     vertical-align:middle;
-    width: 14%
+    width: 16.7%;
 }
 
 a{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-#img1{
-    width: 500px;
+
+.agrupar{
+    width: 100%;
+    margin: 15px auto;
+    text-align: center;
+}
+
+img{
+    width: 200px;
     height: 300px;
-}
-
-.costados{
-    width: 300px;
-    height: 200px;
-    padding: 10px;
-}
-p{
-    text-align: left;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(243, 237, 237);
-}
-
-.info{
+    padding: 7px;
     
-    padding: 1em;
+}
+img:hover{
+    -moz-transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3);
+}
+
+h1{
     display: block;
-    position: relative;
-    width: 95%;
-    height:970px;
-    margin:auto;
-    text-align: left;
-    overflow: hidden;
-    
+    background-color: beige;
+    padding: 6px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(86, 9, 185);
+    font-style: oblique;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
-.caja{
-    margin: 1em;
-    padding: 1em;
-    color:beige;    
-    float: left;
-}
-
-.cajas{
-    margin: 1em;
-    padding: 1em;
-}
-
-
-
-@media screen and (max-width:600px){
-    .caja{
-        width: 90%;
-    }
-}
 
 .pie-pagina{
     width: 100%;
@@ -84,7 +70,7 @@ p{
 }
 .pie-pagina .grupo-1{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
@@ -143,19 +129,6 @@ p{
     }
 }
 
-@media screen and (max-width:1000px){
-    .info{
-        width: 95%;
-        height: 2000px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
-        padding: 35px 0px;
-    }
-}
 
-@media screen and (max-width:1000px){
-    .info{
-        height: 400%;
-        
-    }
-}
+
+

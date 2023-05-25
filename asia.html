@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go!Dramas</title>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <script src="blogjava.js"></script>
+    <link rel="stylesheet" href="asiaest.css">
+    <style>
+        .carrousel{
+            width: 100%;
+        }
+
+        .conteCarrousel{
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+        }
+
+        .itemCarrousel{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .itemCarrouselTarjeta{
+            width: 100%;
+            height: 100%;
+        }
+
+        .itemCarrouselArrows{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px; 
+        }
+
+        .itemCarrouselArrows > i:hover {
+            cursor: pointer;
+        }
+
+        #itemCarrousel-1{
+            background-image: url(extraordinary-attorney-woo-enc.jpeg);
+            background-size: cover;
+            align-items: center;
+        }
+
+        #itemCarrousel-2{
+            background-image: url(true-carru.jpg);
+            background-size: cover;
+            align-items: center;
+        }
+
+        #itemCarrousel-3{
+            background-image: url(propuestalaboral-caru.webp);
+            background-size: cover;
+            align-items: center;
+        }
+
+        .conteCarrouselController{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .conteCarrouselController > a{
+            text-decoration: none;
+            font-size: 2em;
+            color: grey;
+        }
+
+        .itemCarrouselArrows > a > i{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="carrousel">
+        <div class="conteCarrousel">
+            <div class="itemCarrousel" id="itemCarrousel-1">
+                <div class="itemCarrouselTarjeta"></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-3">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-2">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-2">
+                <div class="itemCarrouselTarjeta"></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-1">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-3">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-3">
+                <div class="itemCarrouselTarjeta"></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-2">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-1">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="conteCarrouselController">
+            <a href="#itemCarrousel-1">•</a>
+            <a href="#itemCarrousel-2">•</a>
+            <a href="#itemCarrousel-3">•</a>
+        </div>
+    </div>
+    <nav>
+        <div class="logo">
+            
+        </div>
+        <table id="b" align="center">
+            <tr>
+                <td class="barra"><a href="proyectofinal.html">Inicio</a></td>
+                <td class="barra"><a href="peliculas.html">Peliculas</a></td>
+                <td class="barra"><a href="series.html">Series</a></td>
+                <td class="barra"><a href="asia.html">Asia</a></td>
+                <td class="barra"><a href="ayuda.html">Ayuda</a></td>
+            </tr>
+        </table>
+    </nav>
+    <hr width = "100%" size="0.8px" noshade color="white"/>
+
+    <h2 class="lugar">Corea</h2></br>
+    <div class="agrupar">
+
+        <a href="truebeauty.html"><img src="truebeauty.webp"/></a>
+        <a href="alquimiadealmas.html"><img src="Alquimia_de_almas-1.jpg"/></a>
+        <a href="alquimiadealmas2.html"><img src="Alchemy-of-Souls2.jpeg"/></a>
+        <a href="lamisiondelangel.html"><img src="lamisiondelangel.jpg"/></a>
+        <a href="abogadawoo.html"><img src="extraourdinarywoo.jpg"/></a>
+        <a href=""><img src="extraurdanaryyou.jpg"/></a>
+        <a href=""><img src="ourbelovsummer-enc.jpg"/></a>
+        <a href="2521.html"><img src="2521.webp"/></a>
+
+    </div>
+
+    <h2 class="lugar">China</h2></br>
+    <div class="agrupar">
+       
+        <a href="jardindemeteoros.html"><img src="Jard_n_de_meteoros.jpg"/> </a>
+        
+    </div>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="proyectofinal.html">
+                        <h2>popCORNs</h2>
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Envianos un comentario</h2>
+                <section id="cajaformulario">
+                    <form name="formulario">
+                        <input type="text" name="clave" id="clave" placeholder="Usuario">
+                    </br><textarea name="text" id="texto" placeholder="Nuevo comentario"></textarea>
+                        <p><input type="button" name="guardar" id="guardar"
+                        value="Comentar"></p>
+                        <p><input type="button" name="eliminar" id="eliminar"
+                        value="Borrar comentario" onclick="elimina()"></p>
+                    </form>
+                </section>
+                <section id="cajadatos">
+                    .
+                    </br>
+                </section>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/BangDrama-109397808797790/?mibextid=ZbWKw" class="fa fa-facebook"></a>
+                    <a href="https://t.me/+1pXxaO61A-hlMmIx" class="fa fa-telegram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Super Mangito</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+            if (!myLandbot) {
+                var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+                s.addEventListener('load', function() {
+                var myLandbot = new Landbot.Livechat({
+                    configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1602635-8V9BUPJD95NP2HIB/index.json',
+                });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+        }
+    </script>
+</body>
+</html>

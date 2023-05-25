@@ -3,28 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ayuda</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>popCORNs</title>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <script src="blogjava.js"></script>
+    <link rel="stylesheet" href="estilos.css">
     <style>
-        
-        #navegacion{
-            color: rgb(255, 255, 255);
-            padding: 5px 70px;
-            text-align: left;
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
         }
-        #navegacion li:hover{
-            background-color: rgb(154, 167, 167);
-        }
-        #navegacion li{
-            display: inline-block;
-            background-color: black;
-            list-style: none;
-            padding: 15px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-size: large;
-        }
+
         body{
-            background-color: black;
+            background-color: rgb(15, 15, 15);
+            color:aliceblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .barra:hover{
+            background-color: rgb(154, 167, 167);
+            color: aliceblue;
+        }
+        #b{
+            width: 100%;
+            border-collapse: collapse;
+            height: 40px;
+        }
+        .barra{
+            text-align: center;
+            vertical-align:middle;
+            width: 16.7%;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
         }
         h1{
             color: white;
@@ -67,11 +81,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            color: black;
         }
         .respuesta{
             color:rgb(154, 167, 167);
             line-height: 30px;
-            max-height: 30px;
+            max-height: 40px;
             opacity: 1;
             transition: .3s ease all;
         }
@@ -92,52 +107,78 @@
             text-decoration: none;
             color: white;
         }
-        a:hover{
-            color: purple;
-        }
         footer{
             text-align: center;
             font-size: larger;
         }
-         img{
-            width: 25px;
-            height: 25px;
-        }    
+
+        @media screen and (max-width:800px){
+            .preguntas{
+            width: 90%;
+            }
+        }   
+
+        .info{
+            
+            padding: 1em;
+            display: block;
+            position: relative;
+            width: 95%;
+            margin:auto;
+            text-align: left;
+            overflow: hidden;
+            
+        }
+
+        .caja{
+            display: block;
+            margin: 5px;
+            padding: 1em;
+            width: 40%;
+            color:beige; 
+            background-color: dimgrey;   
+            float: left;
+        }
     </style>
 </head>
 <body >
-    <nav id="navegacion">
-        <ul>
-            <li><a href="proyectofinal.html">Inicio</a></li>
-            <li><a href="peliculas.html">Peliculas</a></li>
-            <li><a href="series.html">Series</a></li>
-            <li>Productoras</li>
-            <li><a href="asia.html">Asia</a></li>
-            <li>Blog</li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="ayuda.html">Ayuda</a></li>
-        </ul>
+    <nav>
+        <div class="logo">
+            
+        </div>
+        <table id="b" align="center">
+            <tr>
+                <td class="barra"><a href="proyectofinal.html">Inicio</a></td>
+                <td class="barra"><a href="peliculas.html">Peliculas</a></td>
+                <td class="barra"><a href="series.html">Series</a></td>
+                <td class="barra"><a href="asia.html">Asia</a></td>
+                <td class="barra"><a href="ayuda.html">Ayuda</a></td>
+            </tr>
+        </table>
     </nav>
+    <hr width = "100%" size="0.8px" noshade color="white"/>
+    </br></br>
+
     <main>
         <h1 class="titulo">Preguntas Frecuentes</h1>
         <div class="preguntas">
             <div class="contenedor-preguntas">
                 <div class="contenedor-respuestas">
-                    <p class="pregunta">- ¿Quienes somos? <img src="suma.avif" alt="Respuesta"/></p>
+                    <p class="pregunta">- ¿Quienes somos? </p>
                     <p class="respuesta">Somos una comunidad encargada de brindar toda la infomacion tus series y peliculas favoritas. Nombre de la pagina... siempre te traira las mejores reseñas y recomendaciones de series y peliculas para todos las edades, generos y gustos.</p>
                 </div>
                 <div class="contenedor-respuestas">
-                    <p class="pregunta">- ¿Donde puedo ver las series y peliculas? <img src="suma.avif" alt="Respuesta"/></p>
+                    <p class="pregunta">- ¿Donde puedo ver las series y peliculas?</p>
                     <p class="respuesta">Debajo de las sinopsis de cada serie o pelicula encontraras la sección de "Ver" allí encontraras todos los sitios posibles para verla serie o pelicula que deseas.
                         ---Nota todas las series o peliculas no son parte de esta comunidad--
                     </p>
                 </div>
                 <div class="contenedor-respuestas">
-                    <p class="pregunta">- ¿Cuando suben nuevas reseñas? <img src="suma.avif" alt="Respuesta"/></p>
+                    <p class="pregunta">- ¿Cuando suben nuevas reseñas? </p>
                     <p class="respuesta">Cada martes y sabados podras encontrar nuevas reseñas.</p>
                 </div>
                 <div class="contenedor-respuestas">
-                    <p class="pregunta">- ¿Quisiera que agregen una nueva serie o pelicula? <img src="suma.avif" alt="Respuesta"/></p>
+                    <p class="pregunta">- ¿Quisiera que agregen una nueva serie o pelicula? </p>
                     <p class="respuesta">Si deseas que agregemos tu serie o pelicula fovorita puedes llenar nuestro formulario que se encuentra en la pestaña de contacto.
                         O puedes solicitarla en nuestro blog o en cualquier red social. Aunque te recomendamos usar la primera opción para asegurar que leamos tu petición.
                     </p>
@@ -146,6 +187,72 @@
         </div>
     </main>
     </br></br>
-    <footer><a href="">Para mas preguntas o dudas ingresa nuestro blog</a></footer>
+    <div class="info">
+        <div class="caja">
+           <a href="formulario.html">PETICIONES</a>
+        </div>
+        <div class="caja">
+            CONTACTO
+        </div>
+    </div>
+
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="principal.html">
+                        <h2>popCORNs</h2>
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Envianos un comentario</h2>
+                <section id="cajaformulario">
+                    <form name="formulario">
+                        <input type="text" name="clave" id="clave" placeholder="Usuario">
+                    </br><textarea name="text" id="texto" placeholder="Nuevo comentario"></textarea>
+                        <p><input type="button" name="guardar" id="guardar"
+                        value="Comentar"></p>
+                        <p><input type="button" name="eliminar" id="eliminar"
+                        value="Borrar comentario" onclick="elimina()"></p>
+                    </form>
+                </section>
+                <section id="cajadatos">
+                    .
+                    </br>
+                </section>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/BangDrama-109397808797790/?mibextid=ZbWKw" class="fa fa-facebook"></a>
+                    <a href="https://t.me/+1pXxaO61A-hlMmIx" class="fa fa-telegram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>popCORNs</b></small>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+            if (!myLandbot) {
+                var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+                s.addEventListener('load', function() {
+                var myLandbot = new Landbot.Livechat({
+                    configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1602635-8V9BUPJD95NP2HIB/index.json',
+                });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+        }
+    </script>
 </body>
 </html>
